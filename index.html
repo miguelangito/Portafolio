@@ -13,27 +13,34 @@
     <title>Portafolio</title>
   </head>
   <body>
-    <div class="bigCont">
+    <div class="fondo">
+      <div class="bigCont">
         <div id="container">
-          <div class="scroll"></div>
-          <h2 class="tittle"> Portafolio</h2>
-          <img class="img-inicio" src="img/out-0.png" alt="">
-          <div class="texto">
-            <p>Bienvenido a mi portafolio de trabajos</p>
-          </div>
+          <h2 class="tittle">Portafolio</h2>
+          <img class="img-inicio" src="img/out-0.png" alt="" />
+
+          <ul class="list-group list-group-flush" id="listPages">
+            <li class="list-group-item" id="liPages">An item</li>
+            <li class="list-group-item" id="liPages">A second item</li>
+            <li class="list-group-item" id="liPages">A third item</li>
+            <li class="list-group-item" id="liPages">A fourth item</li>
+          </ul>
         </div>
-     
+      </div>
     </div>
+    <!-- <script src="js/chart.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  </body>
+
     <script>
-      VANTA.NET({
+            VANTA.NET({
         el: ".bigCont",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
         minHeight: 200.0,
-        minWidth: 200.0,
+        minWidth: 300.0,
         scale: 1.0,
         scaleMobile: 1.0,
         color: 0x82dc82,
@@ -42,5 +49,4 @@
         spacing: 13.0,
       });
     </script>
-  </body>
 </html>

@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
   scrollbar-width: none;
-  /* background-color: rgba(37,36,52,255); */
+}
+
+html{
+  background-color:rgba(37,36,52,255) ;
+}
+
+.fondo {
+  background-color: rgba(37, 36, 52, 255);
 }
 
 .bigCont {
@@ -10,54 +17,43 @@
   width: 100%;
   height: 100vh;
   margin-top: 0;
-  animation: fade-out;
-  animation-timeline: view(); 
-  z-index: 2000;
+  /* animation: fade-out;
+  animation-timeline: view();  */
+  z-index: 1000;
+  /* background-color: rgba(37,36,52,255); */
 }
 
-.img-inicio{
+.img-inicio {
   width: 200px;
   height: 200px;
   border-radius: 15%;
-  margin-left:8%;
+  margin-left: 8%;
+  background-color: none;
 }
 
 .texto {
-  bottom: -60px;
-  left: 100px;
+  bottom: -50px;
+  width: 600px;
+  left: 50px;
   position: relative;
 }
+.description {
+  width: 20%;
+}
 
-.scroll {
-  height: 10px;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  background-color: white;
+#listPages{
+  display: flex;
+  align-items: flex-end; 
+  justify-content: flex-end;
   width: 100%;
-  scale: 0 1;
-  animation: scroll linear;
-  animation-timeline: scroll();
-  border-radius: 25%;
+  background-color: none;
 }
 
-@keyframes scroll {
-  to {
-    scale: 1 1;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.6;
-  }
-}
-
-#container {
-
+#liPages{
+  background-color: #252434;
+  color: white;
+  display: flex;
+  justify-content: flex-end ;
 }
 
 .tittle {
@@ -68,5 +64,15 @@
   padding-top: 6%;
   padding-bottom: 3%;
   padding-left: 10%;
-  background-color: none ;
+  background-color: none;
+}
+
+@media (max-width: 700px) {
+  .tittle {
+    letter-spacing: 0px;
+    padding-left: 2%;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+  }
 }
