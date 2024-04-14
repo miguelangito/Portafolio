@@ -43,17 +43,20 @@ html{
 
 #listPages{
   display: flex;
+  flex-direction: column;
   align-items: flex-end; 
   justify-content: flex-end;
-  width: 100%;
+  width: 99%;
   background-color: none;
 }
 
 #liPages{
-  background-color: #252434;
+  background-color: none;
   color: white;
   display: flex;
   justify-content: flex-end ;
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .tittle {
