@@ -18,7 +18,6 @@ html{
   height: 100%;
   margin-top: 0;
   z-index: 1000;
-  background-position: static;
 }
 
 .img-inicio {
@@ -34,9 +33,6 @@ html{
   width: 600px;
   left: 50px;
   position: relative;
-}
-.description {
-  width: 20%;
 }
 
 #listPages{
