@@ -1,4 +1,17 @@
-#myChart{
-    width: 400px;
-    height: 400px;
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8%;
+    margin-top: 3%;
+}
+
+.card{
+    margin: 10px;
+}
+
+.btn{
+    font-size: 0.9rem;
+  font-family: "Courier New", Courier, monospace;
 }

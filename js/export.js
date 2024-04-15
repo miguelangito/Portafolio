@@ -2,6 +2,7 @@ export function vanta(contenedor){
 
     VANTA.NET({
         el: contenedor,
+        static: true,
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
@@ -12,7 +13,7 @@ export function vanta(contenedor){
         color: 0x82dc82,
         backgroundColor: 0x252434,
         points: 9.0,
-        spacing: 13.0,
+        spacing: 13.0
       });
 
 }
